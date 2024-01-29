@@ -12,8 +12,6 @@ class BiometricAuthenticator(
 ) {
 
 
-    // Lets the user authenticate using either a Class 3 biometric or
-    // their lock screen credential (PIN, pattern, or password).
     private lateinit var promptInfo: BiometricPrompt.PromptInfo
 
     private val biometricManager = BiometricManager.from(appContext.applicationContext)
